@@ -150,6 +150,6 @@ list.push("here");
 list.shift();
 list.unshift("Yo yo");
 list.set(1, "Honey Singh");
-console.log(list.insert(2, "Party all night"));
-console.log("remove", list.remove(1));
+// console.log(list.insert(2, "Party all night"));
+// console.log("remove", list.remove(1));
 console.log(list);
