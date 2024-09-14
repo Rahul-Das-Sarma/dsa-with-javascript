@@ -10,4 +10,14 @@ class HashTable {
     this.values = null;
     this.next = null;
   }
+
+  dequeue() {
+    let max = this.values[0];
+    let end = this.values.pop();
+    if (this.values.length > 0) {
+      this.values[0] = end;
+      this.sinkDownWithRecursion();
+    }
+    return max;
+  }
 }
