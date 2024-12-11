@@ -14,6 +14,7 @@ function maxSlidingWindow(nums, k) {
   let maxSum = windowSum;
 
   for (let i = k; i < nums.length; i++) {
+    console.log(i, nums[i], nums[i - k]);
     windowSum += nums[i] - nums[i - k];
     maxSum = Math.max(maxSum, windowSum);
   }
